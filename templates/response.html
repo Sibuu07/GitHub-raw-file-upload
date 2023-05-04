@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <title>Upload Response</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div class="container">
     <h2>Upload Response</h2>
     <p>File uploaded successfully.</p>
     <p><input type="text" id="url" value="{{ url }}" readonly></p>
     <button onclick="copyToClipboard()">Copy URL</button>
     <button onclick="openInBrowser()">Open in Browser</button>
+    </div>
     <script>
         function copyToClipboard() {
             var urlInput = document.getElementById("url");
