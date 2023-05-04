@@ -1,45 +1,54 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F5F5F5;
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  color: #1F618D;
   text-align: center;
+  margin-top: 50px;
 }
-
 form {
   max-width: 500px;
-  margin: auto;
+  margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #FFFFFF;
   border-radius: 5px;
-  box-shadow: 0 0 5px #ccc;
+  box-shadow: 0px 0px 10px #A9A9A9;
 }
 
 label {
   display: block;
   margin-bottom: 10px;
-  font-weight: bold;
+  color: #1F618D;
 }
 
+input[type="text"],
 input[type="file"] {
-  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px #A9A9A9;
 }
 
 input[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  border: none;
+  background-color: #1F618D;
+  color: #FFFFFF;
   padding: 10px 20px;
+  border: none;
   border-radius: 5px;
+  box-shadow: 0px 0px 5px #A9A9A9;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.error {
-  color: red;
-  font-weight: bold;
-  margin-bottom: 10px;
+input[type="submit"]:hover {
+  background-color: #FFFFFF;
+  color: #1F618D;
 }
