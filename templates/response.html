@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Upload Response</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +15,8 @@
     <h2>Upload Response</h2>
     <p>File uploaded successfully.</p>
     <p><input type="text" id="url" value="{{ url }}" readonly></p>
-    <button onclick="copyToClipboard()">Copy URL</button>
-    <button onclick="openInBrowser()">Open in Browser</button>
+    <button class="btn" onclick="copyToClipboard()">Copy URL</button>
+    <button class="btn" onclick="openInBrowser()">Open in Browser</button>
     </div>
     <script>
         function copyToClipboard() {
