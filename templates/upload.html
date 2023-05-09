@@ -6,6 +6,7 @@
     <title>Upload File to GitHub</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 
   </head>
   <body>
@@ -25,6 +26,9 @@
       
       <label for="filepath">Enter file path (optional):</label><br>
       <input type="text" id="filepath" name="filepath"><br><br>
+      
+      <label for="folder">Folder Name (optional):</label><br>
+      <input type="text" name="folder" id="folder"><br><br>
       
       <input type="submit" value="Upload">
     </form>
