@@ -5,7 +5,8 @@ import base64
 
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = './temp/'
+app.config['UPLOAD_FOLDER'] = './uploads/'
+
 app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # limit file size to 100 MB
 
 
