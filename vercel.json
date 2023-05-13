@@ -6,8 +6,7 @@
         }
     ],
     "routes": [
-        { "src": "/(.*)", "dest": "app.py" },
-        { "src": "/upload", "dest": "app.py" },
-        { "src": "/response", "dest": "app.py" }
+        { "src": "/(.*)", "dest": "/app.py" },
+        { "src": "/response", "dest": "/app.py" }
     ]
 }
