@@ -78,7 +78,7 @@ def upload():
             message = 'Uploading file'
 
         # save file to temp directory
-      file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
+        file.save(filepath)
 
 
         # read file from temp directory and encode in base64
